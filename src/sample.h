@@ -27,18 +27,20 @@ class Sample
   public:
     /* ====================  LIFECYCLE     ======================================= */
     Sample ();                             /* constructor */
+    Sample (double iX, double iY, double iTheta, double weight=0.0);
 
     /* ====================  ACCESSORS     ======================================= */
-    double x();
-    double y();
-    double theta();
+    void set_x( double value );
+    void set_y( double value );
+    void set_theta( double value );
+    void set_weight ( double value );
 
 
+    double get_x(  ) const;
+    double get_y(  ) const;
+    double get_theta(  ) const;
+    double get_weight (  ) const;
     /* ====================  MUTATORS      ======================================= */
-    bool updateX(double newX);
-    bool updateY(double newY);
-    bool updateTheta(double newTheta);
-
 
     /* ====================  OPERATORS     ======================================= */
 
@@ -50,6 +52,7 @@ class Sample
     double x;
     double y;
     double theta;
+    double weight;
 
 }; /* -----  end of class Sample  ----- */
 
