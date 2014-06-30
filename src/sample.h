@@ -15,6 +15,7 @@
  *
  * =====================================================================================
  */
+#include "point2d.h"
 
 /*
  * =====================================================================================
@@ -27,31 +28,16 @@ class Sample
   public:
     /* ====================  LIFECYCLE     ======================================= */
     Sample ();                             /* constructor */
-    Sample (double iX, double iY, double iTheta, double weight=0.0);
+    Sample (cPoint*, double );
 
     /* ====================  ACCESSORS     ======================================= */
-    void set_x( double value );
-    void set_y( double value );
-    void set_theta( double value );
     void set_weight ( double value );
-
-
-    double get_x(  ) const;
-    double get_y(  ) const;
-    double get_theta(  ) const;
     double get_weight (  ) const;
-    /* ====================  MUTATORS      ======================================= */
-
-    /* ====================  OPERATORS     ======================================= */
 
 
   private:
-    /* ====================  METHODS       ======================================= */
-
     /* ====================  DATA MEMBERS  ======================================= */
-    double x;
-    double y;
-    double theta;
+    cPoint* point;
     double weight;
 
 }; /* -----  end of class Sample  ----- */

@@ -26,9 +26,7 @@
  */
 Sample::Sample ()
 {
-    x = 0.0;
-    y = 0.0;
-    theta = 0.0;
+    weight = 0.0;
 }  /* -----  end of method Sample::Sample  (constructor)  ----- */
 
 /*
@@ -38,89 +36,11 @@ Sample::Sample ()
  * Description:  Parametrized constructor
  *--------------------------------------------------------------------------------------
  */
-Sample::Sample ( double iX , double iY, double iTheta, double iWeight )
+Sample::Sample (cPoint *iPoint, double weight):Point(iPoint)
 {
-  x = iX;
-  y = iY;
-  theta = iTheta;
+  Point = iPoint;
   weight = iWeight;
 }		/* -----  end of method Sample::Sample  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  get_x
- *--------------------------------------------------------------------------------------
- */
-inline double
-Sample::get_x (  ) const
-{
-  return x;
-}		/* -----  end of method Sample::get_x  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  set_x
- *--------------------------------------------------------------------------------------
- */
-  inline void
-Sample::set_x ( double value )
-{
-  x	= value;
-  return ;
-}		/* -----  end of method Sample::set_x  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  get_y
- *--------------------------------------------------------------------------------------
- */
-inline double
-Sample::get_y (  ) const
-{
-  return y;
-}		/* -----  end of method Sample::get_y  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  set_y
- *--------------------------------------------------------------------------------------
- */
-  inline void
-Sample::set_y ( double value )
-{
-  y	= value;
-  return ;
-}		/* -----  end of method Sample::set_y  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  get_theta
- *--------------------------------------------------------------------------------------
- */
-inline double
-Sample::get_theta (  ) const
-{
-  return theta;
-}		/* -----  end of method Sample::get_theta  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  Sample
- *      Method:  set_theta
- *--------------------------------------------------------------------------------------
- */
-inline void
-Sample::set_theta ( double value )
-{
-  theta	= value;
-  return ;
-}		/* -----  end of method Sample::set_theta  ----- */
-
 /*
  *--------------------------------------------------------------------------------------
  *       Class:  Sample

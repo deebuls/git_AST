@@ -15,7 +15,7 @@
  *
  * =====================================================================================
  */
-#include <mcl.h>
+#include "mcl.h"
 
 
 /*
@@ -27,23 +27,29 @@
  */
 cMCL::cMCL ()
 {
-  sampleSet.resize(100);
+  mNumberOfSamples = 100;
+  mSampleSet.resize(100);
 }  /* -----  end of method cMCL::cMCL  (constructor)  ----- */
 
 cMCL::cMCL ( int iNumberOfSamples)
 {
+  mNumberOfSamples = iNumberOfSamples;
   sampleSet.resize(iNumberOfSamples);
 }		/* -----  end of method cMCL::cMCL  ----- */
 
 bool
-cMCL::mGenerateUniformRandomSampleSet ( )
+cMCL::mGenerateUniformDistributedRandomSampleSet ( )
 {
+  for (int i=0; i<mNumberOfSamples; i++)
+  {
+
+  }
 
   return true;
 }		/* -----  end of method cMCL::mGenerateUniformRandomSampleSet  ----- */
 
 bool
-cMCL::mGenerateGaussionSampleSet ( <+argument_list+> )
+cMCL::mGenerateGaussioniDistributedSampleSet ( )
 {
   return true;
 }		/* -----  end of method cMCL::mGenerateGaussionSampleSet  ----- */

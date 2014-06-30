@@ -19,7 +19,6 @@
  */
 #include <vector>
 #include "sample.h"
-
 /*
  * =====================================================================================
  *        Class:  cMCL
@@ -40,8 +39,9 @@ class cMCL
 
   private:
     /* ====================  DATA MEMBERS  ======================================= */
-    int numberOfSamples;
-    std::vector<Sample> sampleSet;              /* current set of Sample Set */
+    int mNumberOfSamples;
+    std::vector<Sample> mSampleSet;              /* current set of Sample Set */
+
 
 
 }; /* -----  end of class cMCL  ----- */
