@@ -34,11 +34,19 @@ cMCL::cMCL ()
 cMCL::cMCL ( int iNumberOfSamples)
 {
   mNumberOfSamples = iNumberOfSamples;
-  sampleSet.resize(iNumberOfSamples);
+  mSampleSet.resize(iNumberOfSamples);
 }		/* -----  end of method cMCL::cMCL  ----- */
 
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  mGenerateUniformDistributedRandomSampleSet
+ *  Description:  Generate the Sample set for the MCL based on Normal
+ *  distribution. Takes and argument of tPointType determining the type of the
+ *  point to be considered.
+ * =====================================================================================
+ */
 bool
-cMCL::mGenerateUniformDistributedRandomSampleSet ( )
+cMCL::mGenerateUniformDistributedSampleSet( cPoint::tPointType iType)
 {
   for (int i=0; i<mNumberOfSamples; i++)
   {
@@ -47,9 +55,17 @@ cMCL::mGenerateUniformDistributedRandomSampleSet ( )
 
   return true;
 }		/* -----  end of method cMCL::mGenerateUniformRandomSampleSet  ----- */
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  mGenerateGaussioniDistributedSampleSet 
+ *  Description:  Generate the Sample set for the MCL based on Normal
+ *  distribution. Takes and argument of tPointType determining the type of the
+ *  point to be considered.
+ * =====================================================================================
+ */
 
 bool
-cMCL::mGenerateGaussioniDistributedSampleSet ( )
+cMCL::mGenerateGaussianDistributedSampleSet(  cPoint::tPointType iType)
 {
   return true;
 }		/* -----  end of method cMCL::mGenerateGaussionSampleSet  ----- */

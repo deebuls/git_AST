@@ -27,6 +27,11 @@ class cPoint
   public:
     /* ====================  LIFECYCLE     ======================================= */
     cPoint (){}                             /* constructor */
+    enum tPointType
+    {
+      t2D,
+      t3D
+    };
 
 }; /* -----  end of class cPoint  ----- */
 

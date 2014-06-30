@@ -33,8 +33,8 @@ class cMCL
     cMCL (int);
 
     /* ====================  OPERATORS     ======================================= */
-    bool mGenerateUniformDistributedSampleSet();
-    bool mGenerateGaussianDistributedSampleSet();
+    bool mGenerateUniformDistributedSampleSet(cPoint::tPointType);
+    bool mGenerateGaussianDistributedSampleSet(cPoint::tPointType);
 
 
   private:
