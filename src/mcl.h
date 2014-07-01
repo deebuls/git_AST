@@ -37,6 +37,7 @@ class cMCL
     bool mGenerateGaussianDistributedSampleSet(cPoint::tPointType);
 
     bool mComputeGaussianDistributionRealPose(cPoint::tPointType);
+    bool mVisualize(cPoint::tPointType);
 
   private:
     /* ====================  DATA MEMBERS  ======================================= */

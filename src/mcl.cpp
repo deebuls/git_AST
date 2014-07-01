@@ -86,3 +86,16 @@ cMCL::mComputeGaussianDistributionRealPose( cPoint::tPointType iType)
   return true;
 }		/* -----  end of method cMCL::mGenerateGaussianDistributionRealPose  ----- */
 
+/*
+ *--------------------------------------------------------------------------------------
+ *       Class:  cMCL
+ *      Method:  cMCL :: mVisualize
+ * Description:  building a nice GUI to visualize the results
+ *--------------------------------------------------------------------------------------
+ */
+bool
+cMCL::mVisualize ( cPoint::tPointType iType)
+{
+  return true;
+}		/* -----  end of method cMCL::mVisualize  ----- */
+
