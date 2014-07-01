@@ -36,11 +36,13 @@ class cMCL
     bool mGenerateUniformDistributedSampleSet(cPoint::tPointType);
     bool mGenerateGaussianDistributedSampleSet(cPoint::tPointType);
 
+    bool mComputeGaussianDistributionRealPose(cPoint::tPointType);
 
   private:
     /* ====================  DATA MEMBERS  ======================================= */
     int mNumberOfSamples;
     std::vector<Sample> mSampleSet;              /* current set of Sample Set */
+    Sample mRealPose;
 
 
 

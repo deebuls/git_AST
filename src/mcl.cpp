@@ -70,3 +70,19 @@ cMCL::mGenerateGaussianDistributedSampleSet(  cPoint::tPointType iType)
   return true;
 }		/* -----  end of method cMCL::mGenerateGaussionSampleSet  ----- */
 
+/*
+ *--------------------------------------------------------------------------------------
+ *       Class:  cMCL
+ *      Method:  cMCL :: mGenerateGaussianDistributionRealPose
+ * Description:  Generate an additional
+ * sample using the second method from above and use this as the ”real” pose.
+ * Using a Gaussian distribution around this pose, compute the weight of the
+ * samples as the value of the Gaussian at that pose.
+ *--------------------------------------------------------------------------------------
+ */
+bool
+cMCL::mComputeGaussianDistributionRealPose( cPoint::tPointType iType)
+{
+  return true;
+}		/* -----  end of method cMCL::mGenerateGaussianDistributionRealPose  ----- */
+
